@@ -1,0 +1,55 @@
+.storeThumbnails{
+  margin: 3px;
+  display: grid;
+}
+
+.storeThumbnails div{
+  margin: 10px;
+  padding: 5px;
+  /* box-shadow: 0 10px 6px -6px #777; */
+}
+
+.storeThumbnails div:hover{
+  transform: scale(1.03);
+  transition: .30s;
+}
+
+.laptopContainer{
+  grid-row: 1;
+}
+
+.mouseContainer{
+  grid-row: 1;
+}
+
+.mousepadContainer{
+
+}
+
+.keyboardContainer{
+
+}
+
+.headsetContainer{
+
+}
+
+.caseContainer{
+
+}
+
+.routerContainer{
+
+}
+
+.ramMemoryContainer{
+
+}
+
+.hdd{
+
+}
+
+.ssd{
+
+}

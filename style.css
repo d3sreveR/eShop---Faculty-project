@@ -1,0 +1,107 @@
+*{
+  margin: 0;
+}
+
+body{
+    font-family: 'Signika Negative', sans-serif;
+    
+}
+
+a:link {
+    color:black;
+    text-decoration: none;
+  }
+  
+a:visited {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(151, 151, 151);
+  text-decoration: none;
+}
+
+a:active {
+  color: black;
+    text-decoration: none;
+  }
+
+
+nav{
+    background-color: rgb(230, 230, 230);
+    display: flex;
+    justify-content: stretch;
+    
+}
+
+.navigationButton{
+
+    padding: 10px;
+    background-color: rgb(230, 230, 230);
+    
+}
+
+.blackBar{
+  margin-bottom: 3px;
+  height: 5px;
+  background-color: black;
+  box-shadow: 0px 2px 0px 0px rgb(124, 124, 124);;
+}
+
+
+.mouse{
+  margin: 10px;
+  display: grid;
+  justify-content: space-evenly;
+
+}
+.mouseTumbnail{
+  grid-row: 1;
+  padding: 5px;
+}
+
+.mouseTumbnail:hover{
+  /* box-shadow: 2px 2px 5px 2px rgb(124, 124, 124);; */
+  transform: scale(1.1);
+  transition: .30s;
+}
+
+
+.keyboard{
+  margin: 10px;
+  display: grid;
+  justify-content: space-evenly;
+}
+
+.keyboardThumbnail{
+  grid-row: 1;
+  padding: 5px;
+}
+
+.keyboardThumbnail:hover{
+  /* box-shadow: 2px 2px 5px 2px rgb(124, 124, 124);; */
+  transform: scale(1.1);
+  transition: .30s;
+}
+
+.emptySpace{
+  margin: 10px;
+}
+
+footer{
+  display: grid;
+  justify-content: space-evenly;
+  align-content: center;
+  background-color: black;
+  color: white;
+  height: 50px;
+}
+
+footer div{
+  grid-row: 1;
+  align-items: center;
+}
+footer p{
+  grid-row: 2;
+}
