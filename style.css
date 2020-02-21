@@ -63,7 +63,7 @@ nav{
 
 .mouseTumbnail:hover{
   /* box-shadow: 2px 2px 5px 2px rgb(124, 124, 124);; */
-  transform: scale(1.1);
+  transform: scale(1.04);
   transition: .30s;
 }
 
@@ -81,7 +81,7 @@ nav{
 
 .keyboardThumbnail:hover{
   /* box-shadow: 2px 2px 5px 2px rgb(124, 124, 124);; */
-  transform: scale(1.1);
+  transform: scale(1.04);
   transition: .30s;
 }
 
