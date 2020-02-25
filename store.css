@@ -1,6 +1,7 @@
 .storeThumbnails{
   margin: 3px;
   display: grid;
+  justify-content: space-evenly;
 }
 
 .storeThumbnails div{
@@ -23,33 +24,6 @@
 }
 
 .mousepadContainer{
-
+  grid-row: 1;
 }
 
-.keyboardContainer{
-
-}
-
-.headsetContainer{
-
-}
-
-.caseContainer{
-
-}
-
-.routerContainer{
-
-}
-
-.ramMemoryContainer{
-
-}
-
-.hdd{
-
-}
-
-.ssd{
-
-}
