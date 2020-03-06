@@ -1,0 +1,15 @@
+section{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+
+}
+
+article{
+    /* width: 100%; */
+    padding: 10px;
+    margin: 10px;
+    border: black solid;
+    border-radius: 10%;
+    text-align: center;
+}
+

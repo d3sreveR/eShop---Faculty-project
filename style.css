@@ -2,7 +2,9 @@
   margin: 0;
 }
 
+
 body{
+    position: relative;
     font-family: 'Signika Negative', sans-serif;
     
 }
