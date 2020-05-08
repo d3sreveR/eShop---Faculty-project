@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.googleapis.com/css?family=Signika+Negative&display=swap" rel="stylesheet">
     <title>eShop - Home</title>
 </head>
+
 <body>
     <!-- Navigation bar -->
     <nav>
@@ -22,82 +24,95 @@
             <a href="contact.html">Contact</a>
         </div>
     </nav>
-    
+
     <!-- Main -->
     <main>
 
         <div class="blackBar"></div>
-        
-        <!-- MOUSE SECTION -->
-        <section class="mouse" id="mouse">
-            <div class="mouseTumbnail">
-                <h2>Logitech loitech G502</h2>
-                <img src="images\mouse\loitech_G502_lightspeed.jpg" alt="">
-                <p></p>
-            </div>
-            <div class="mouseTumbnail">
-                <h2>Razer Chroma</h2>
-                <img src="images\mouse\razer_chroma.jpg" alt="">
-                <p></p>
-            </div>
-            <div class="mouseTumbnail">
-                <h2>Razer Deathadder Elite</h2>
-                <img src="images\mouse\razer_deathadder_elite.jpg" alt="">
-                <p></p>
-            </div>
-            <div class="mouseTumbnail">
-                <h2>SteelSeries Rival 700</h2>
-                <img src="images\mouse\SteelSerpies_rivam_700.jpg" alt="">
-                <p></p>
-            </div>
-        </section>
-        <!-- BANNER SECTION -->
-            <section>
-            <div class="banner">
-                <img src="images\banner.jpg" alt="" width="100%">
-            </div>
-            
-        </section>
 
-        <!-- KEYBOARD SECTION -->
-        <section class="keyboard" id="keyboard">
-            <div class="keyboardThumbnail">
-                <h2>Apex Pro</h2>
-                <img src="images\keyboard\Apex_pro.jpg" alt="">
-                <p></p>
+
+        <!-- PopUp for payment -->
+
+        <div class="hideShow" id="hideShow">
+            <div class="popup">
+                <section class="popupBuy" id="pupupBuy">
+                    <div class="nameOnCard">
+                        <label for="nameOnCard">*Name on Card</label>
+                        <input type="text" class="inputNameOnCard" id="nameOnCard" name="nameOnCard">
+                    </div>
+
+                    <div class="cardInfo">
+                        <div class="infoBars">
+                            <label for="cardNumber">*Card Number</label>
+                            <input type="number" class="cardNumber" name="cardNumber" pattern="/^-?\d+\.?\d*$/"
+                                onKeyPress="if(this.value.length==19) return false;">
+                        </div>
+
+                        <div class="infoBars">
+                            <label for="expiration">*Expiration</label>
+
+                            <div class="expirationBar">
+                                <select class="expiration" name='expiration' id='expiration'>
+                                    <option value=''>Month</option>
+                                    <option value='01'>January</option>
+                                    <option value='02'>February</option>
+                                    <option value='03'>March</option>
+                                    <option value='04'>April</option>
+                                    <option value='05'>May</option>
+                                    <option value='06'>June</option>
+                                    <option value='07'>July</option>
+                                    <option value='08'>August</option>
+                                    <option value='09'>September</option>
+                                    <option value='10'>October</option>
+                                    <option value='11'>November</option>
+                                    <option value='12'>December</option>
+                                </select>
+                                <select class="expiration" name='expiration' id='expiration'>
+                                    <option value=''>Year</option>
+                                    <option value='10'>2020</option>
+                                    <option value='11'>2021</option>
+                                    <option value='12'>2022</option>
+                                    <option value='13'>2023</option>
+                                    <option value='14'>2024</option>
+                                </select>
+                            </div>
+                            <input class="inputCard" type="hidden" name="expiry" id="expiry" maxlength="4" />
+                        </div>
+
+                        <div class="infoBars">
+                            <label for="cvv">*CVV</label>
+                            <input class="cvv" id="cvv" name="cvv" type="number"
+                                pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==3) return false;">
+                        </div>
+                    </div>
+
+                    <div class="payButton">
+                        <button type="submit" class="pay" id="pay">PAY</button>
+                        <button class="closePay" id="closePay">CANCEL</button>
+                    </div>
+
+                    <div class="paymentSuccesful" id="paymentSuccesful">
+                        Payment succesful
+                    </div>
+                </section>
             </div>
-            <div class="keyboardThumbnail">
-                <h2>Level 20 RGB Cherry</h2>
-                <img src="images\keyboard\Level-20-RGB-Cherry.jpg" alt="">
-                <p></p>
-            </div>
-            <div class="keyboardThumbnail">
-                <h2>Logitech K350</h2>
-                <img src="images\keyboard\Logitech_K350.jpg" alt="">
-                <p></p>
-            </div>
-            <div class="keyboardThumbnail">
-                <h2>Razer BlackWiddow</h2>
-                <img src="images\keyboard\Razer_BlackWidow_ultimate_2016.jpg" alt="">
-                <p></p>
-            </div>
-            
-        </section>
+        </div>
+
         <div class="emptySpace"></div>
-        
     </main>
 
     <!-- Footer -->
     <footer>
-            <div>
-                <p>prof: Aleksandar Petrovski</p>
-            </div>
-            <div>
-                <p>student: Ivan Nacevski</p>
-                
-            </div>
+        <div>
+            <p>prof: Aleksandar Petrovski</p>
+        </div>
+        <div>
+            <p>student: Ivan Nacevski</p>
+
+        </div>
     </footer>
 
     <script src="script.js"></script>
 </body>
+
 </html>

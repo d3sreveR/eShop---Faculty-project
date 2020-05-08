@@ -1,5 +1,5 @@
-let articleSection = document.getElementById("articleSection");
-let buyButton = document.getElementById("buy");
+let articleSection = document.querySelector(".articleSection");
+let hideShowPopUp = document.getElementById("hideShow");
 
 
 function Laptop(name, imgSource, display, hdd, ram, cpu, gpu, price) {
@@ -24,7 +24,7 @@ function Laptop(name, imgSource, display, hdd, ram, cpu, gpu, price) {
                 <strong>CPU</strong>: ${cpu} <br>
                 <strong>GPU</strong>: ${gpu} <br>
                 <strong>PRICE</strong>: ${price} <br>
-                <button id="buy"> Buy </button>
+                <button class="buy">BUY</button>
             </p>
         </article>
     `
@@ -37,6 +37,12 @@ function Laptop(name, imgSource, display, hdd, ram, cpu, gpu, price) {
   new Laptop("Dell Alienware 17", "../../images/laptop/Dell-Alienware-17.jpg", " 17.3”, Full HD (1920 x 1080), IPS", "1TB HDD", "16GB", "Intel Core i7 6th Gen 6700HQ", "NVIDIA GeForce GTX 765m", "$1000");
 
   new Laptop("HP Omen", "../../images/laptop/HP-Omen-.jpg", " 15.6-inch 3840x2160 (4K) IPS with G-Sync", "2TB Seagate HDD, 256GB Toshiba NVMe M.2 SSD", "16GB DDR4", "Intel Core i7-7700HQ", "NVIDIA GeForce GTX 1060 Max-Q", "$1000");
+  
 
-
-buyButton.addEventListener("click", () => {} )
+  let buyButton = document.getElementsByClassName("buy");
+  for (var i = 0, len = buyButton.length; i < len; i++) {
+      
+    buyButton[i].addEventListener("click", () => {
+        hideShowPopUp.style.display = "block"
+    })
+  }

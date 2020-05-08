@@ -14,7 +14,6 @@ laptop.addEventListener("click", () => {
     window.location.href = "./store/laptop/laptops.html";
 })
 
-
 mouse.addEventListener("click", () => {
     window.location.href = "./store/mice/mice.html";
 })
@@ -31,22 +30,22 @@ headset.addEventListener("click", () => {
     window.location.href = "./store/headset/headset.html";
 })
 
-cases.addEventListener("click", () => {
-    window.location.href = "./store/cases/case.html";
-})
+// cases.addEventListener("click", () => {
+//     window.location.href = "./store/cases/case.html";
+// })
 
 router.addEventListener("click", () => {
     window.location.href = "./store/router/routers.html";
 })
 
-ram.addEventListener("click", () => {
-    window.location.href = "./store/ram/ram.html";
-})
+// ram.addEventListener("click", () => {
+//     window.location.href = "./store/ram/ram.html";
+// })
 
-hdd.addEventListener("click", () => {
-    window.location.href = "./store/hdd/hdd.html";
-})
+// hdd.addEventListener("click", () => {
+//     window.location.href = "./store/hdd/hdd.html";
+// })
 
-ssd.addEventListener("click", () => {
-    window.location.href = "./store/ssd/ssd.html";
-})
+// ssd.addEventListener("click", () => {
+//     window.location.href = "./store/ssd/ssd.html";
+// })

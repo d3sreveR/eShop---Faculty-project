@@ -1,5 +1,5 @@
-let articleSection = document.getElementById("articleSection");
-let buyButton = document.getElementById("buy");
+let articleSection = document.querySelector(".articleSection");
+let hideShowPopUp = document.getElementById("hideShow");
 
 
 function Laptop(name, imgSource, dpi, price) {
@@ -17,7 +17,7 @@ function Laptop(name, imgSource, dpi, price) {
             <p> 
                 <strong>DPI</strong>: ${dpi}  <br>
                 <strong>PRICE</strong>: ${price} <br>
-                <button id="buy"> Buy </button>
+                <button class="buy"> Buy </button>
             </p>
         </article>
     `
@@ -31,4 +31,10 @@ function Laptop(name, imgSource, dpi, price) {
 
   new Laptop("SteelSeries rival 700", "../../images/mouse/SteelSerpies_rivam_700.jpg", "$16,000 DPI", "$80 ");
 
-buyButton.addEventListener("click", () => {} )
+  let buyButton = document.getElementsByClassName("buy");
+  for (var i = 0, len = buyButton.length; i < len; i++) {
+      
+    buyButton[i].addEventListener("click", () => {
+        hideShowPopUp.style.display = "block"
+    })
+  }

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="../../style.css">
+    <link rel="stylesheet" href="./router.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Signika+Negative&display=swap" rel="stylesheet">
+    <title>eShop - Routers</title>
+</head>
+    <body>
+        <!-- Navigation bar -->
+        <nav>
+            <div class="navigationButton">
+                <a href="../../index.html">Home</a>
+            </div>
+            <div class="navigationButton">
+                <a href="../../store.html">Store</a>
+            </div>
+            <div class="navigationButton">
+                <a href="../../about.html">About</a>
+            </div>
+            <div class="navigationButton">
+                <a href="../../contact.html">Contact</a>
+            </div>
+        </nav>
+        <div class="blackBar"></div>
+        
+        <!-- Main -->
+        <main>
+            <section id="articleSection" class="articleSection"> </section>
+
+             <!-- PopUp for payment -->
+
+       <div class="hideShow" id="hideShow">
+        <div class="popup">
+            <section class="popupBuy" id="pupupBuy">
+                <div class="nameOnCard">
+                    <label for="nameOnCard">*Name on Card</label>
+                    <input type="text" class="inputNameOnCard" name="nameOnCard">
+                </div>
+
+                <div class="cardInfo">
+                    <div class="infoBars">
+                        <label for="cardNumber">*Card Number</label>
+                        <input type="number" class="cardNumber" name="cardNumber" pattern="/^-?\d+\.?\d*$/"
+                            onKeyPress="if(this.value.length==19) return false;">
+                    </div>
+
+                    <div class="infoBars">
+                        <label for="expiration">*Expiration</label>
+
+                        <div class="expirationBar">
+                            <select class="expiration" name='expiration' id='expiration'>
+                                <option value=''>Month</option>
+                                <option value='01'>January</option>
+                                <option value='02'>February</option>
+                                <option value='03'>March</option>
+                                <option value='04'>April</option>
+                                <option value='05'>May</option>
+                                <option value='06'>June</option>
+                                <option value='07'>July</option>
+                                <option value='08'>August</option>
+                                <option value='09'>September</option>
+                                <option value='10'>October</option>
+                                <option value='11'>November</option>
+                                <option value='12'>December</option>
+                            </select>
+                            <select class="expiration" name='expiration' id='expiration'>
+                                <option value=''>Year</option>
+                                <option value='10'>2020</option>
+                                <option value='11'>2021</option>
+                                <option value='12'>2022</option>
+                                <option value='13'>2023</option>
+                                <option value='14'>2024</option>
+                            </select>
+                        </div>
+                        <input class="inputCard" type="hidden" name="expiry" id="expiry" maxlength="4" />
+                    </div>
+
+                    <div class="infoBars">
+                        <label for="cvv">*CVV</label>
+                        <input class="cvv" min="3" max="3" id="cvv" name="cvv" type="number"
+                            pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==3) return false;">
+                    </div>
+                </div>
+
+                <div class="payButton">
+                    <button type="submit" class="pay" id="pay">PAY</button>
+                    <button class="closePay" id="closePay">CANCEL</button>
+                </div>
+
+                <div class="paymentSuccesful" id="paymentSuccesful">
+                    Payment succesful
+                </div>
+            </section>
+        </div>
+    </div>
+
+        </main>
+
+        <!-- Footer -->
+        <footer>
+                <div>
+                    <p>prof: Aleksandar Petrovski</p>
+                </div>
+                <div>
+                    <p>student: Ivan Nacevski</p>
+                    
+                </div>
+        </footer>
+
+        <!-- <script src="../../script.js"></script> -->
+        <script src="./router.js"></script>
+        <script src="../../script.js"></script>
+        
+    </body>
+</html>
