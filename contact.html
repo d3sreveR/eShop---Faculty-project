@@ -30,72 +30,37 @@
 
         <div class="blackBar"></div>
 
-
-        <!-- PopUp for payment -->
-
-        <div class="hideShow" id="hideShow">
-            <div class="popup">
-                <section class="popupBuy" id="pupupBuy">
-                    <div class="nameOnCard">
-                        <label for="nameOnCard">*Name on Card</label>
-                        <input type="text" class="inputNameOnCard" id="nameOnCard" name="nameOnCard">
-                    </div>
-
-                    <div class="cardInfo">
-                        <div class="infoBars">
-                            <label for="cardNumber">*Card Number</label>
-                            <input type="number" class="cardNumber" name="cardNumber" pattern="/^-?\d+\.?\d*$/"
-                                onKeyPress="if(this.value.length==19) return false;">
-                        </div>
-
-                        <div class="infoBars">
-                            <label for="expiration">*Expiration</label>
-
-                            <div class="expirationBar">
-                                <select class="expiration" name='expiration' id='expiration'>
-                                    <option value=''>Month</option>
-                                    <option value='01'>January</option>
-                                    <option value='02'>February</option>
-                                    <option value='03'>March</option>
-                                    <option value='04'>April</option>
-                                    <option value='05'>May</option>
-                                    <option value='06'>June</option>
-                                    <option value='07'>July</option>
-                                    <option value='08'>August</option>
-                                    <option value='09'>September</option>
-                                    <option value='10'>October</option>
-                                    <option value='11'>November</option>
-                                    <option value='12'>December</option>
-                                </select>
-                                <select class="expiration" name='expiration' id='expiration'>
-                                    <option value=''>Year</option>
-                                    <option value='10'>2020</option>
-                                    <option value='11'>2021</option>
-                                    <option value='12'>2022</option>
-                                    <option value='13'>2023</option>
-                                    <option value='14'>2024</option>
-                                </select>
-                            </div>
-                            <input class="inputCard" type="hidden" name="expiry" id="expiry" maxlength="4" />
-                        </div>
-
-                        <div class="infoBars">
-                            <label for="cvv">*CVV</label>
-                            <input class="cvv" id="cvv" name="cvv" type="number"
-                                pattern="/^-?\d+\.?\d*$/" onKeyPress="if(this.value.length==3) return false;">
-                        </div>
-                    </div>
-
-                    <div class="payButton">
-                        <button type="submit" class="pay" id="pay">PAY</button>
-                        <button class="closePay" id="closePay">CANCEL</button>
-                    </div>
-
-                    <div class="paymentSuccesful" id="paymentSuccesful">
-                        Payment succesful
-                    </div>
-                </section>
+        <div class="contactForm">
+            <div class="left">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d974.0292475624697!2d21.94361482924208!3d41.862353997489514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNDHCsDUxJzQ0LjUiTiAyMcKwNTYnMzkuMCJF!5e1!3m2!1sen!2smk!4v1589014722953!5m2!1sen!2smk"
+                    width="500" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false"
+                    tabindex="0"></iframe>
             </div>
+
+            <div class="right">
+                <div class="textBanner">
+                    Contact us
+                </div>
+
+                <div class="contactInfo">
+
+                        <label for="fname">First Name</label>
+                        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+
+                        <label for="lname">Last Name</label>
+                        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+
+                        <label for="subject">Subject</label>
+                        <textarea id="subject" name="subject" placeholder="Write something.."></textarea>
+
+                        <input type="submit" class="submitButton" value="submit" onclick="window.location.reload();">
+          
+                </div>
+            </div>
+        </div>
+
+
         </div>
 
         <div class="emptySpace"></div>
